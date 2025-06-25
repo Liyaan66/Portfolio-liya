@@ -4,13 +4,10 @@
     <section class="min-h-screen flex flex-col justify-center items-center text-center 
            bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 
            text-white px-6 py-20 bg-[length:400%_400%] animate-gradient-xy">
-           
+
       <!-- Profile Image -->
-      <img
-        src="../assets/profile/liya.png"
-        alt="An Liya"
-        class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl border-4 border-white mb-6 animate-fade-in-up"
-      />
+      <img src="../assets/profile/liya.png" alt="An Liya"
+        class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-2xl border-4 border-white mb-6 animate-fade-in-up" />
 
       <!-- Heading -->
       <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animate-fade-in-up">Hello, I'm Liya</h1>
@@ -22,7 +19,8 @@
 
       <!-- Bio -->
       <p class="max-w-2xl text-base md:text-lg text-white/90 leading-relaxed mb-6 animate-fade-in delay-500">
-        Welcome to my portfolio! I'm a dedicated developer with a passion for building efficient and impactful web applications.
+        Welcome to my portfolio! I'm a dedicated developer with a passion for building efficient and impactful web
+        applications.
         I'm currently exploring opportunities where I can contribute and grow. Thank you for visiting!
       </p>
 
@@ -40,18 +38,12 @@
 
       <!-- Action Buttons -->
       <div class="flex space-x-4 animate-fade-in delay-[900ms]">
-        <a
-          href="/Liya An-Resume.pdf"
-          download
-          class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
-        >
+        <a href="/Liya An-Resume.pdf" download
+          class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
           Download CV
         </a>
-        <a
-          href="https://t.me/liya_dev"
-          target="_blank"
-          class="border-2 border-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-indigo-600 transition"
-        >
+        <a href="https://t.me/liya_dev" target="_blank"
+          class="border-2 border-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-indigo-600 transition">
           Chat on Telegram
         </a>
       </div>
@@ -62,15 +54,9 @@
       <div class="max-w-6xl mx-auto text-center">
         <h2 class="text-4xl font-bold text-indigo-700 mb-10">Featured Projects</h2>
         <div class="grid md:grid-cols-2 gap-8">
-          <PortfolioCard
-            v-for="project in projects.slice(0, 2)"
-            :key="project.id"
-            :id="project.id"
-            :title="project.title"
-            :description="project.description"
-            :image="project.image"
-            @view-details="handleViewDetails"
-          />
+          <PortfolioCard v-for="project in projects.slice(0, 2)" :key="project.id" :id="project.id"
+            :title="project.title" :description="project.description" :image="project.image"
+            @view-details="handleViewDetails" />
         </div>
       </div>
     </section>
@@ -100,11 +86,8 @@
         <p class="text-lg mb-6">
           I'm available for freelance or full-time opportunities. Feel free to reach out!
         </p>
-        <a
-          href="https://t.me/yourtelegramusername"
-          target="_blank"
-          class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
-        >
+        <a href="https://t.me/liya_dev" target="_blank"
+          class="bg-white text-indigo-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
           Message Me on Telegram
         </a>
       </div>
@@ -142,4 +125,3 @@ function handleViewDetails(id) {
   alert(`You clicked on project ID: ${id}`)
 }
 </script>
-

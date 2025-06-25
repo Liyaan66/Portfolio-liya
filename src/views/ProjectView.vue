@@ -4,15 +4,8 @@
       <h1 class="text-4xl font-bold text-center text-indigo-700 mb-12">My Projects</h1>
 
       <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        <PortfolioCard
-          v-for="project in projects"
-          :key="project.id"
-          :id="project.id"
-          :title="project.title"
-          :description="project.description"
-          :image="project.image"
-          @view-details="handleViewDetails"
-        />
+        <PortfolioCard v-for="project in projects" :key="project.id" :id="project.id" :title="project.title"
+          :description="project.description" :image="project.image" @view-details="handleViewDetails" />
       </div>
     </div>
   </div>
@@ -21,7 +14,7 @@
 <script setup>
 import PortfolioCard from '@/components/global_components/PortfolioCard.vue'
 import { ref } from 'vue'
-import liya from '../assets/profile/liya.png'
+import liya from '../assets/profile/pos.png'
 
 
 const projects = ref([
