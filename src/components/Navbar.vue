@@ -21,19 +21,20 @@
             active-class="text-indigo-700 font-bold underline"
           >About</RouterLink>
         </li>
+       
         <li>
+          <RouterLink
+            to="/skill"
+            class="hover:text-indigo-600 transition"
+            active-class="text-indigo-700 font-bold underline"
+          >Skills</RouterLink>
+        </li>
+         <li>
           <RouterLink
             to="/projects"
             class="hover:text-indigo-600 transition"
             active-class="text-indigo-700 font-bold underline"
           >Projects</RouterLink>
-        </li>
-        <li>
-          <RouterLink
-            to="/blog"
-            class="hover:text-indigo-600 transition"
-            active-class="text-indigo-700 font-bold underline"
-          >Blog</RouterLink>
         </li>
         <li>
           <RouterLink

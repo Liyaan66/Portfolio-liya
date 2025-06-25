@@ -4,14 +4,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import AboutView from '@/views/AboutView.vue'
 import ProjectView from '@/views/ProjectView.vue'
-import BlogView from '@/views/BlogView.vue'
 import ContactView from '@/views/ContactView.vue'
+import SkillView from '@/views/SkillView.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: HomeView },
   { path: '/about', name: 'About', component: AboutView },
+  { path: '/skill', name: 'Skills', component: SkillView },
   { path: '/projects', name: 'Projects', component: ProjectView },
-  { path: '/blog', name: 'Blog', component: BlogView },
   { path: '/contact', name: 'Contact', component: ContactView },
 ]
 

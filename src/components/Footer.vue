@@ -1,27 +1,28 @@
 <template>
-  <footer class="bg-white border-t border-gray-200 py-10 text-center text-sm text-gray-600">
+  <footer class="bg-gradient-to-r from-teal-50 via-sky-50 to-violet-50 border-t border-gray-200 text-gray-700 py-10">
     <div class="max-w-7xl mx-auto px-6 grid gap-6 sm:grid-cols-3 items-center text-center sm:text-left">
       
-      <!-- Left: Branding -->
+      <!-- Branding -->
       <div>
-        <h2 class="text-xl font-bold text-indigo-600">An Liya</h2>
-        <p class="text-sm text-gray-500 mt-1">Full Stack Developer</p>
+        <h2 class="text-xl font-bold text-indigo-700">An Liya</h2>
+        <p class="text-sm text-gray-600 mt-1">Full Stack Developer</p>
       </div>
 
-      <!-- Center: Navigation Links -->
+      <!-- Navigation -->
       <div class="space-x-4">
-        <RouterLink to="/" class="text-gray-600 hover:text-indigo-600 transition">Home</RouterLink>
-        <RouterLink to="/about" class="text-gray-600 hover:text-indigo-600 transition">About</RouterLink>
-        <RouterLink to="/projects" class="text-gray-600 hover:text-indigo-600 transition">Projects</RouterLink>
-        <RouterLink to="/blog" class="text-gray-600 hover:text-indigo-600 transition">Blog</RouterLink>
-        <RouterLink to="/contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</RouterLink>
+        <RouterLink to="/" class="hover:text-indigo-700 transition">Home</RouterLink>
+        <RouterLink to="/about" class="hover:text-indigo-700 transition">About</RouterLink>
+        <RouterLink to="/skill" class="hover:text-indigo-700 transition">Skills</RouterLink>
+        <RouterLink to="/projects" class="hover:text-indigo-700 transition">Projects</RouterLink>
+        <RouterLink to="/contact" class="hover:text-indigo-700 transition">Contact</RouterLink>
       </div>
 
-      <!-- Right: Copyright -->
-      <div class="text-gray-400 sm:text-right">
+      <!-- Copyright -->
+      <div class="text-gray-500 sm:text-right text-sm">
         <p>© 2025 An Liya</p>
         <p>All rights reserved.</p>
       </div>
     </div>
   </footer>
 </template>
+
