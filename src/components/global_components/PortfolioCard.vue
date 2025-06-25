@@ -1,14 +1,16 @@
 <template>
-  <div class="bg-white rounded-2xl shadow p-5 hover:shadow-xl transition-all duration-300">
-    <img :src="image" alt="Project" class="rounded-xl h-40 w-full object-cover mb-4" />
-    <h2 class="text-xl font-semibold mb-2">{{ title }}</h2>
-    <p class="text-gray-600 text-sm mb-4">{{ description }}</p>
-    <button
-      @click="$emit('view-details', id)"
-      class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
-    >
-      View More
-    </button>
+  <div class="bg-white rounded-xl shadow hover:shadow-lg overflow-hidden transition">
+    <img :src="image" :alt="title" class="w-full h-40 object-cover">
+    <div class="p-4 space-y-2">
+      <h3 class="text-xl font-semibold text-indigo-600">{{ title }}</h3>
+      <p class="text-gray-600 text-sm">{{ description }}</p>
+      <button
+        @click="$emit('view-details', id)"
+        class="mt-2 text-sm text-white bg-indigo-500 px-4 py-2 rounded hover:bg-indigo-600 transition"
+      >
+        View Details
+      </button>
+    </div>
   </div>
 </template>
 
@@ -17,8 +19,6 @@ defineProps({
   id: Number,
   title: String,
   description: String,
-  image: String
+  image: String,
 })
-
-defineEmits(['view-details'])
 </script>
